@@ -2,7 +2,7 @@
 
 #Story Board
 
-![](images/filename/StartTrek2.png)
+![](https://github.com/SeanLynch1/Star-Trek/blob/main/Images/StartTrek2.png)
 
 
 
