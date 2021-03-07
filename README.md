@@ -1,13 +1,13 @@
 # Star-Trek
 
-#Story Board
+# Story Board
 
 ![](https://github.com/SeanLynch1/Star-Trek/blob/main/Images/StartTrek2.png)
 
 
 
 
-#3D Model Credit
+# 3D Model Credit
 "Star Trek - Sovereign Class" (https://skfb.ly/6Rnw6) by Wholock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 "Star Trek - Danube Class" (https://skfb.ly/6RZrA) by Wholock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
