@@ -2,7 +2,7 @@
 
 #Story Board
 
-![Uploading StartTrek2.png…]()
+![](images/filename StartTrek2.png)
 
 
 
