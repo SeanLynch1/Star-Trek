@@ -5,8 +5,6 @@
 ![](https://github.com/SeanLynch1/Star-Trek/blob/main/Images/StartTrek2.png)
 
 
-
-
 # 3D Model Credit
 "Star Trek - Sovereign Class" (https://skfb.ly/6Rnw6) by Wholock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
@@ -25,3 +23,7 @@
 "Star Trek - Olympic Class" (https://skfb.ly/6RKGx) by Wholock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 "Star Trek - Bajoran Raider" (https://skfb.ly/6WVOy) by Wholock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+# AI Implementation Resources
+
+https://www.youtube.com/channel/UC5h9h8heDq1bjsSBsoq0CQg
