@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class IntroCinematics : MonoBehaviour
@@ -15,6 +16,7 @@ public class IntroCinematics : MonoBehaviour
     private float timeInterval = 1f;
     public float cameraSpeed = 20;
     private float startTime;
+    public AudioSource music;
 
     private void Awake()
     {
@@ -35,9 +37,19 @@ public class IntroCinematics : MonoBehaviour
             startTime = 0;
             if (cameraSpeed < 10000)
             {
-                cameraSpeed += .5f;
+                cameraSpeed += 2f;
             }
-            GameEvents.Instance.MoveCameraToTarget(mainCamera, cameraTarget, cameraSpeed * Time.deltaTime);
+            GameEvents.Instance.MoveToTarget(mainCamera, cameraTarget, cameraSpeed * Time.deltaTime);
         }
+        if(!music.isPlaying)
+        {
+            StartCoroutine(WaitForSeconds());
+        }
+    }
+    private IEnumerator WaitForSeconds()
+    {
+        GameEvents.Instance.FadeImageIn(fadeImage, 7.5f);
+        yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene("Scene1");
     }
 }

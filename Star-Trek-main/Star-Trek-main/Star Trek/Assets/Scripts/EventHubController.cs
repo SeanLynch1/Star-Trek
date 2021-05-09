@@ -16,7 +16,7 @@ public partial class GameEvents : MonoBehaviour
         onFadeTextOut += FadeTextOut;
         onFadeInAndOut += FadeTextInAndOut;
         onRollCinematics += RollTextCinematics;
-        onCameraMoveToTarget += MoveCameraToTarget;
+        onMoveToTarget += MoveTowardsTarget;
     }
     private void OnDisable()
     {
@@ -26,7 +26,7 @@ public partial class GameEvents : MonoBehaviour
         onFadeTextOut -= FadeTextOut;
         onFadeInAndOut -= FadeTextInAndOut;
         onRollCinematics -= RollTextCinematics;
-        onCameraMoveToTarget -= MoveCameraToTarget;
+        onMoveToTarget -= MoveTowardsTarget;
     }
     #endregion
     #region Functions
@@ -98,14 +98,12 @@ public partial class GameEvents : MonoBehaviour
             timeInterval = 8.5f;
         }
     }
-    public void MoveCameraToTarget(GameObject g,GameObject target, float t)
+    private void MoveTowardsTarget(GameObject g,GameObject target, float t)
     {
         g.transform.position = Vector3.MoveTowards(g.transform.position, target.transform.position, Time.deltaTime * t);
         g.transform.LookAt(target.transform.position);
         if (g.transform.position == target.transform.position)
             return;
     }
-        
-
     #endregion
 }

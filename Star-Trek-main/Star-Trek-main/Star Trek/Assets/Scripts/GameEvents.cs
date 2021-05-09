@@ -27,7 +27,7 @@ public partial class GameEvents : MonoBehaviour
 
     #region Delegates & Events
     public delegate void GameObjectDel(GameObject g,GameObject transform, float t);
-    public event GameObjectDel onCameraMoveToTarget;
+    public event GameObjectDel onMoveToTarget;
 
     public delegate void GameObjectFloatDel(GameObject g, float t);
     public event GameObjectFloatDel onFadeImageIn;
@@ -45,9 +45,9 @@ public partial class GameEvents : MonoBehaviour
     #region Events Functions
     public void MoveToTarget(GameObject g,GameObject transform, float t)
     {
-        if(onCameraMoveToTarget != null)
+        if(onMoveToTarget != null)
         {
-            onCameraMoveToTarget(g,transform, t);
+            onMoveToTarget(g,transform, t);
         }
     }
     public void RollTextCinematicsFunction(List<TextMeshProUGUI> textsArray, List<bool> textBools, ref float timeInterval, ref int iterations, float resetTime)
