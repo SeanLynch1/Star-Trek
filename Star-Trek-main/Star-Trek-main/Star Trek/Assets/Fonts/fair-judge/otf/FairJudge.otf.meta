@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f703697ba2dd63b4c8905bb9f2bf88bb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Fair Judge
+  fontNames:
+  - Fair Judge
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d4287013ee964704eb4532f997190530, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
