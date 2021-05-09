@@ -26,6 +26,8 @@
 
 "Space Dock Nar30974" (https://skfb.ly/OY8r) by morenostefanuto is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Shuttle Typ 15" (https://skfb.ly/onnqF) by riker446 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # AI Implementation Resources
 
 https://www.youtube.com/channel/UC5h9h8heDq1bjsSBsoq0CQg
