@@ -34,6 +34,8 @@
 
 "Control Panel" (https://skfb.ly/6FUvZ) by Vinny Passmore is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Control Painel" (https://skfb.ly/6Xs99) by FlavioBC is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # AI Implementation Resources
 
 https://www.youtube.com/channel/UC5h9h8heDq1bjsSBsoq0CQg
