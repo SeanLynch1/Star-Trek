@@ -24,6 +24,8 @@
 
 "Star Trek - Bajoran Raider" (https://skfb.ly/6WVOy) by Wholock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Space Dock Nar30974" (https://skfb.ly/OY8r) by morenostefanuto is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # AI Implementation Resources
 
 https://www.youtube.com/channel/UC5h9h8heDq1bjsSBsoq0CQg
