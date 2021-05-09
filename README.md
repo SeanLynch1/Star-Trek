@@ -30,6 +30,8 @@
 
 "An alternate Miranda Class" (https://skfb.ly/6SQzy) by Gingerswitch is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
+"Assessment Two - AIE - Sci Fi Ship Interior" (https://skfb.ly/6y8ME) by Callum McKeown is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 # AI Implementation Resources
 
 https://www.youtube.com/channel/UC5h9h8heDq1bjsSBsoq0CQg
