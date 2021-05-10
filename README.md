@@ -5,7 +5,7 @@
 ![](https://github.com/SeanLynch1/Star-Trek/blob/main/Images/StartTrek2.png)
 
 
-# 3D Model Credit
+# Game Credits
 "Star Trek - Sovereign Class" (https://skfb.ly/6Rnw6) by Wholock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 "Star Trek - Danube Class" (https://skfb.ly/6RZrA) by Wholock is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
@@ -39,6 +39,9 @@
 https://freesound.org/people/Buss1000/sounds/204968/
 
 https://assetstore.unity.com/packages/2d/textures-materials/dynamic-space-background-lite-104606
+
+https://freesound.org/people/pushkin/sounds/445372/
+
 # AI Implementation Resources
 
 https://www.youtube.com/channel/UC5h9h8heDq1bjsSBsoq0CQg
