@@ -10,6 +10,7 @@ public class FaceTarget : MonoBehaviour
     {
         if(scene1)
         target = Scene1Controller.currentCameraListStatic[Scene1Controller.CurrentCameraIndex].transform;
+        if(target != null)
         transform.LookAt(target.position);
     }
 }

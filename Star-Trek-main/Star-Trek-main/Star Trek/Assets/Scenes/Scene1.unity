@@ -2140,7 +2140,7 @@ MonoBehaviour:
   - 12.91
   - 31
   - 36
-  - 75
+  - 77
   shotDurationList: []
 --- !u!4 &483870766
 Transform:
@@ -13525,7 +13525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1390518869
 MonoBehaviour:
   m_ObjectHideFlags: 0

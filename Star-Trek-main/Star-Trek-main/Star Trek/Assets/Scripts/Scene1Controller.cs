@@ -65,7 +65,6 @@ public class Scene1Controller : CameraSettings
     }
     public override void SwitchCamera()
     {
-
         switch (CurrentCameraIndex)
         {
             case 0:
