@@ -5,9 +5,11 @@ using UnityEngine;
 public class FaceTarget : MonoBehaviour
 {
     public Transform target;
-
-    void Start()
+    public bool scene1;
+    void Update()
     {
+        if(scene1)
+        target = Scene1Controller.currentCameraListStatic[Scene1Controller.CurrentCameraIndex].transform;
         transform.LookAt(target.position);
     }
 }

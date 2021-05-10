@@ -26,6 +26,18 @@ public partial class GameEvents : MonoBehaviour
     }
 
     #region Delegates & Events
+    public delegate void ArrangeDel(List<float> timeStamps, List<float> shotDurations);
+    public event ArrangeDel onArrangeStoppageTime;
+
+    public delegate float DoubleGameObject(GameObject current, GameObject target);
+    public event DoubleGameObject onCalculateDistance;
+
+    public delegate void CameraListDel(List<GameObject> camerList, int currentIndex);
+    public event CameraListDel onSwitchCamera;
+
+    public delegate void MultiDelegate(GameObject g, GameObject lookTarget, GameObject moveTarget, float t, float panSpeed, float moveSpeed, bool stopPan, float earlyStoppageTime);
+    public event MultiDelegate onPanCamera;
+
     public delegate void GameObjectDel(GameObject g,GameObject transform, float t);
     public event GameObjectDel onMoveToTarget;
 
@@ -38,11 +50,41 @@ public partial class GameEvents : MonoBehaviour
     public event TextDel onFadeTextOut;
     public event TextDel onFadeInAndOut;
 
-    public delegate void TextCinematicDel(List<TextMeshProUGUI> textsArray, List<bool> textBools, ref float timeInterval, ref int iterations, float resetTime);
+    public delegate void TextCinematicDel(List<TextMeshProUGUI> textsArray, List<bool> textBools, ref float timeInterval, ref int iterations, float resetTime, float pairedTextTime);
     public event TextCinematicDel onRollCinematics;
     #endregion
 
     #region Events Functions
+    public void ArrangeStoppageTime(List<float> timeStamps, List<float> shotDurations)
+    {
+        if(onArrangeStoppageTime != null)
+        {
+            onArrangeStoppageTime(timeStamps, shotDurations);
+        }
+    }
+    public float CalculateDistanceFunc(GameObject current,GameObject target)
+    {
+        if (onCalculateDistance != null)
+        {
+            return onCalculateDistance(current, target);
+        }
+        else
+            return 0;
+    }
+    public void SwitchCameraFunction(List<GameObject> g, int currentIndex)
+    {
+        if(onSwitchCamera != null)
+        {
+            onSwitchCamera(g,currentIndex);
+        }
+    }
+    public void PanCameraFunction(GameObject g, GameObject lookTarget, GameObject moveTarget,   float panTime,  float panSpeed, float moveSpeed, bool stopPan, float earlyStoppageTime)
+    {
+        if (onPanCamera != null)
+        {
+             onPanCamera(g, lookTarget, moveTarget,   panTime, panSpeed, moveSpeed, stopPan, earlyStoppageTime);
+        }
+    }
     public void MoveToTarget(GameObject g,GameObject transform, float t)
     {
         if(onMoveToTarget != null)
@@ -50,11 +92,11 @@ public partial class GameEvents : MonoBehaviour
             onMoveToTarget(g,transform, t);
         }
     }
-    public void RollTextCinematicsFunction(List<TextMeshProUGUI> textsArray, List<bool> textBools, ref float timeInterval, ref int iterations, float resetTime)
+    public void RollTextCinematicsFunction(List<TextMeshProUGUI> textsArray, List<bool> textBools, ref float timeInterval, ref int iterations, float resetTime, float pairedTextTime)
     {
         if(onRollCinematics != null)
         {
-            onRollCinematics(textsArray,textBools, ref timeInterval, ref iterations,resetTime);
+            onRollCinematics(textsArray,textBools, ref timeInterval, ref iterations,resetTime,pairedTextTime);
         }
     }
     public void FadeTextInFunction(TextMeshProUGUI text, float startTime)
@@ -92,6 +134,5 @@ public partial class GameEvents : MonoBehaviour
             onFadeImageOut(g,time);
         }
     }
-  
     #endregion
 }

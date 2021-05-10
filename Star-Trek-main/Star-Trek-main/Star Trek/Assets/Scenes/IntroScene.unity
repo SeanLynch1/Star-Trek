@@ -6722,6 +6722,12 @@ MonoBehaviour:
   mainCamera: {fileID: 495356630}
   cameraSpeed: 500
   music: {fileID: 495356634}
+  fadeTime: 8.5
+  sceneToLoad: Scene1
+  accelerate: 1
+  pairedTextTime: 4
+  time: 0
+  changeSceneTime: 7
 --- !u!4 &2056910393
 Transform:
   m_ObjectHideFlags: 0

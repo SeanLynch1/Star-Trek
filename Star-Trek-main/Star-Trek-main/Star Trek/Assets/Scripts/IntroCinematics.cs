@@ -12,12 +12,17 @@ public class IntroCinematics : MonoBehaviour
     public GameObject cameraTarget;
     public GameObject fadeImage;
     public GameObject mainCamera;
-    private  int iterations = 0;
+    private int iterations = 0;
     private float timeInterval = 1f;
     public float cameraSpeed = 20;
     private float startTime;
     public AudioSource music;
-
+    public float fadeTime;
+    public string sceneToLoad;
+    public bool accelerate;
+    public float pairedTextTime;
+    public float time;
+    public float changeSceneTime;
     private void Awake()
     {
         startTime = timeInterval;
@@ -28,28 +33,38 @@ public class IntroCinematics : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        GameEvents.Instance.RollTextCinematicsFunction(textMeshesList,pairedTextState, ref timeInterval, ref iterations, 4f);
+        GameEvents.Instance.RollTextCinematicsFunction(textMeshesList, pairedTextState, ref timeInterval, ref iterations, fadeTime, pairedTextTime);
 
         startTime -= Time.deltaTime;
-        
-        if(startTime <= 0)
+
+        if (startTime <= 0)
         {
             startTime = 0;
-            if (cameraSpeed < 10000)
+            if (accelerate)
             {
-                cameraSpeed += 2f;
+                if (cameraSpeed < 10000)
+                {
+                    cameraSpeed += 2f;
+                }
             }
+
             GameEvents.Instance.MoveToTarget(mainCamera, cameraTarget, cameraSpeed * Time.deltaTime);
         }
-        if(!music.isPlaying)
+        if (!music.isPlaying && accelerate)
         {
             StartCoroutine(WaitForSeconds());
+        }
+        time += Time.deltaTime;
+        if (time >= changeSceneTime)
+        {
+            if (!accelerate)
+                StartCoroutine(WaitForSeconds());
         }
     }
     private IEnumerator WaitForSeconds()
     {
         GameEvents.Instance.FadeImageIn(fadeImage, 7.5f);
         yield return new WaitForSeconds(6f);
-        SceneManager.LoadScene("Scene1");
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
