@@ -5,7 +5,7 @@
 ![](https://github.com/SeanLynch1/Star-Trek/blob/main/Images/StartTrek2.png)
 
 # Game Information
-~~What Classes did I Write Myself?~~
+## What Classes did I Write Myself?
 -All classes, logic and the design pattern were thought up and written by me with the help of https://www.youtube.com/user/mikedolan03 simulating the final battle in the last scene
 
 Did I Use a FSM or Behaviour Tree or Similar?
